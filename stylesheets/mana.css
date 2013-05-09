@@ -1,0 +1,151 @@
+.nk_icon_0, .nk_icon_1, .nk_icon_2, .nk_icon_2b, .nk_icon_2g, .nk_icon_2r, .nk_icon_2u, .nk_icon_2w, .nk_icon_3, .nk_icon_4, .nk_icon_5, .nk_icon_6, .nk_icon_7, .nk_icon_8, .nk_icon_9, .nk_icon_10, .nk_icon_11, .nk_icon_12, .nk_icon_13, .nk_icon_14, .nk_icon_15, .nk_icon_16, .nk_icon_b, .nk_icon_bg, .nk_icon_br, .nk_icon_g, .nk_icon_gu, .nk_icon_gw, .nk_icon_r, .nk_icon_rg, .nk_icon_rw, .nk_icon_s, .nk_icon_snow, .nk_icon_t, .nk_icon_u, .nk_icon_ub, .nk_icon_q, .nk_icon_ur, .nk_icon_w, .nk_icon_wb, .nk_icon_wu, .nk_icon_t, .nk_icon_x, .nk_icon {
+    background:url(../images/sprites.gif) no-repeat;
+    display:inline-block;
+    height:15px;
+    float:none;
+    margin:0 2px;
+    overflow:hidden;
+    text-indent:-99999px;
+    width:15px;
+}
+.nk_icon__inline {
+    display:inline-block!important;
+    float:none!important;
+    margin:0 2px;
+}
+.nk_icon_2u {
+    background-position:0 -96px;
+}
+.nk_icon_2w {
+    background-position:0 -112px;
+}
+.nk_icon_3 {
+    background-position:0 -128px;
+}
+.nk_icon_4 {
+    background-position:0 -144px;
+}
+.nk_icon_5 {
+    background-position:0 -160px;
+}
+.nk_icon_6 {
+    background-position:0 -176px;
+}
+.nk_icon_7 {
+    background-position:0 -192px;
+}
+.nk_icon_8 {
+    background-position:0 -208px;
+}
+.nk_icon_9 {
+    background-position:0 -224px;
+}
+.nk_icon_10 {
+    background-position:0 -240px;
+}
+.nk_icon_11 {
+    background-position:0 -256px;
+}
+.nk_icon_12 {
+    background-position:0 -272px;
+}
+.nk_icon_13 {
+    background-position:0 -288px;
+}
+.nk_icon_14 {
+    background-position:0 -304px;
+}
+.nk_icon_15 {
+    background-position:0 -320px;
+}
+.nk_icon_16 {
+    background-position:0 -336px;
+}
+.nk_icon_b {
+    background-position:0 -352px;
+}
+.nk_icon_bg {
+    background-position:0 -368px;
+}
+.nk_icon_br {
+    background-position:0 -384px;
+}
+.nk_icon_g {
+    background-position:0 -400px;
+}
+.nk_icon_gu {
+    background-position:0 -416px;
+}
+.nk_icon_gw {
+    background-position:0 -432px;
+}
+.nk_icon_r {
+    background-position:0 -448px;
+}
+.nk_icon_rg {
+    background-position:0 -464px;
+}
+.nk_icon_rw {
+    background-position:0 -480px;
+}
+.nk_icon_s {
+    background-position:0 -496px;
+}
+.nk_icon_snow {
+    background-position:0 -512px;
+}
+.nk_icon_t {
+    background-position:0 -528px;
+}
+.nk_icon_u {
+    background-position:0 -544px;
+}
+.nk_icon_ub {
+    background-position:0 -560px;
+}
+.nk_icon_q {
+    background-position:0 -576px;
+}
+.nk_icon_ur {
+    background-position:0 -592px;
+}
+.nk_icon_w {
+    background-position:0 -608px;
+}
+.nk_icon_wb {
+    background-position:0 -624px;
+}
+.nk_icon_wu {
+    background-position:0 -640px;
+}
+.nk_icon_x {
+    background-position:0 -656px;
+}
+.nk_icon_bp, .nk_icon_gp, .nk_icon_p, .nk_icon_rp, .nk_icon_up, .nk_icon_wp {
+    background:url(../images/phyrexia-sprites.png) no-repeat;
+    display:inline-block;
+    height:15px;
+    float:none;
+    margin:2 0px;
+    overflow:hidden;
+    text-indent:-99999px;
+    width:15px;
+}
+.nk_icon_0, .nk_icon_bp {
+    background-position:0 0;
+}
+.nk_icon_1, .nk_icon_gp {
+    background-position:0 -16px;
+}
+.nk_icon_2, .nk_icon_p {
+    background-position:0 -32px;
+}
+.nk_icon_2b, .nk_icon_rp {
+    background-position:0 -48px;
+}
+.nk_icon_2g, .nk_icon_up {
+    background-position:0 -64px;
+}
+.nk_icon_2r, .nk_icon_wp {
+    background-position:0 -80px;
+}

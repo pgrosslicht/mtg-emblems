@@ -1,0 +1,8 @@
+CACHE MANIFEST
+./stylesheets/ratchet.min.css
+./stylesheets/mana.min.css
+./images/sprites.gif
+./images/phyrexia-sprites.png
+./javascripts/ratchet.min.js
+http://code.jquery.com/jquery-2.0.0.min.js
+./javascripts/embleme.min.js
