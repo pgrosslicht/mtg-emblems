@@ -1,4 +1,5 @@
 CACHE MANIFEST
+#version 1
 ./stylesheets/ratchet.min.css
 ./stylesheets/mana.min.css
 ./images/sprites.gif

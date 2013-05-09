@@ -242,12 +242,34 @@ parse_mana = (html) ->
 
   return html
 
+shuffle = (a) ->
+  i = a.length
+  while --i > 0
+    j = ~~(Math.random() * (i + 1))
+    t = a[j]
+    a[j] = a[i]
+    a[i] = t
+  a
+
+get_emblem = ->
+  shuffle(embleme2)
+  emblem = $('<li>' + parse_mana(embleme2[0].text + '</li>')).hide()
+  $('#embleme').prepend(emblem).show('slow')
+  $('li').first().fadeIn('slow')
+  $('#anzahl').text(parseInt($('#anzahl').text()) + 1)
+
+get_emblem2 = ->
+  shuffle(embleme2)
+  emblem = $('<li>' + parse_mana(embleme2.pop().text + '</li>')).hide()
+  $('#embleme').prepend(emblem).show('slow')
+  $('li').first().fadeIn('slow')
+  $('#anzahl').text(parseInt($('#anzahl').text()) + 1)
+
 $ -> 
+  embleme2 = embleme
   $('#send').click -> 
-    emblem = $('<li>' + parse_mana(embleme[Math.floor(Math.random() * embleme.length)].text + '</li>')).hide()
-    $('#embleme').prepend(emblem).show('slow')
-    $('li').first().fadeIn('slow')
-    $('#anzahl').text(parseInt($('#anzahl').text()) + 1)
+    get_emblem2()
   $('#reset').click ->
+    embleme2 = embleme
     $('#embleme').hide('slow').html('')
     $('#anzahl').text('0')
