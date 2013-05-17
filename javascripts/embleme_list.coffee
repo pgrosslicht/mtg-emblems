@@ -209,8 +209,6 @@ embleme = [{
 }, {
     "text": "All spells have cascade."
 }, {
-    "text": "State-based actions aren't checked."
-}, {
     "text": "Permanents have phasing."
 }, {
     "text": "Ignore all replacement effects."
