@@ -232,5 +232,11 @@ embleme = [{
     "text": "When this emblem enters the command zone, choose a player at random. That player takes an extra turn now."
 }, {
     "text": "Whenever a player casts a spell, that player exiles the top two cards of his or her library."
+}, {
+    "text": "Permanents entering the battlefield don't cause abilities to trigger."
+}, {
+    "text": "Players may play cards in their graveyards."
+}, {
+    "text": "Players may play face-up exiled cards they own."
 }]
 
