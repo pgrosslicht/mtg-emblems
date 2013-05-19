@@ -55,7 +55,7 @@ embleme = [{
 }, {
     "text": "At the beginning of each player's upkeep, that player flips a coin for each permanent he or she controls. If he ore she loses the flip, he or she sarcifices that permanent."
 }, {
-    "text": "At the beginning of each player's upkeep, all untapped permanents phase out."
+    "text": "When this emblem enters the command zone, all permanents phase out.\nWhen this emblem leaves the command zone, all permanents phase in.\nPermanents can't phase in."
 }, {
     "text": "Each player plays with his hand revealed."
 }, {
@@ -232,5 +232,11 @@ embleme = [{
     "text": "When this emblem enters the command zone, choose a player at random. That player takes an extra turn now."
 }, {
     "text": "Whenever a player casts a spell, that player exiles the top two cards of his or her library."
+}, {
+    "text": "Permanents entering the battlefield don't cause abilities to trigger."
+}, {
+    "text": "Players may play cards in their graveyards."
+}, {
+    "text": "Players may play face-up exiled cards they own."
 }]
 
