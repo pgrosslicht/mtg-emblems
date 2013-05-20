@@ -43,6 +43,8 @@ embleme = [{
 }, {
     "text": "All permanents have all activated abilities of all other permanents their controller controls."
 }, {
+    "text": "All permanents have all abilities of all other permanents."
+}, {
     "text": "Spells cost {2} more to cast."
 }, {
     "text": "Spells cost {1} less to cast."
