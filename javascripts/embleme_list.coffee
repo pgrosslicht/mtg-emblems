@@ -1,5 +1,4 @@
-embleme = [
-   {
+embleme = [{
     "id": 1,
     "text": "Players have no maximum hand size."
 }, {
