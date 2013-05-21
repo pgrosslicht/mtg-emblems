@@ -358,5 +358,8 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "Players may play face-up exiled cards they own."
+}, {
+    "difficulty": 0,
+    "text": "Whenever a player plays a spell, he or she may pay {2}. If he or she doesn't, he or she loses 5 life."
 }]
 
