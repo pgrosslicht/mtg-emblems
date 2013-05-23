@@ -330,9 +330,6 @@ embleme = [{
     "text": "Players may play lands anytime they could cast an instant. (The one-land-per-turn rule still applies.)"
 }, {
     "difficulty": 0,
-    "text": "Whenever a phase would begin, the active player flips a coin. If he or she loses the flip, he or she skips that phase."
-}, {
-    "difficulty": 0,
     "text": "When this emblem enters the command zone, each player flips a coin. Each player that loses the flip skips his or her next turn."
 }, {
     "difficulty": 0,
