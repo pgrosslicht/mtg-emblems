@@ -40,3 +40,4 @@ $ ->
     get_emblem2()
   $('#reset').click ->
     reset_emblems()
+  $('#total-emblem-count').text(embleme.length + ' Emblems in the database')
