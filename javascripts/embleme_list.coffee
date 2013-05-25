@@ -367,5 +367,8 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose a color at random, then flip a coin. If the coin comes up heads, all creatures of the chosen color get +2/+2. If the coin comes up tails, all permanents and all players have protection from the chosen color."
+}, {
+    "difficulty": 0,
+    "text": "At the beginning of each player's upkeep, until that player's next turn, tapped creatures that player controls can block as if they weren't tapped."
 }]
 
