@@ -78,7 +78,7 @@ embleme = [{
     "text": "At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able."
 }, {
     "difficulty": 0,
-    "text": "Whenever a player casts a spell, counter that spell unless it's controller pays {X} where X is that spell's converted mana cost."
+    "text": "Whenever a player casts a spell, counter that spell unless it's controller pays {X}, where X is that spell's converted mana cost."
 }, {
     "difficulty": 0,
     "text": "Whenever a player casts a spell for the first time in a turn, counter that spell. This ability can counter spells that can't be countered as though they couldn't not be countered."
@@ -114,7 +114,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone."
 }, {
     "difficulty": 0,
-    "text": "Whenever a permanent becomes tapped, it's controller sacrifices it."
+    "text": "Whenever a permanent becomes tapped, its controller sacrifices it."
 }, {
     "difficulty": 0,
     "text": "At the end of each player's upkeep, that player sacrifices all permanents he or she controls."
@@ -162,7 +162,7 @@ embleme = [{
     "text": "Whenever a player casts a spell, that player may untap target permanent he or she controls or tap target permanent an opponent controls."
 }, {
     "difficulty": 0,
-    "text": "All instant or sorcery spells have buyback {X} where X is half that spell's converted mana cost, rounded up."
+    "text": "All instant or sorcery spells have buyback {X}, where X is half that spell's converted mana cost, rounded up."
 }, {
     "difficulty": 0,
     "text": "At the beginning of each player's upkeep, that player chooses persist or undying for each creature he or she controls. Each creature gets the chosen ability until its controller's next upkeep."
@@ -189,7 +189,7 @@ embleme = [{
     "text": "All instant or sorcery cards gain storm."
 }, {
     "difficulty": 0,
-    "text": "All cards in all hands have madness {X} where X is the number of cards in their owner's hand."
+    "text": "All cards in all hands have madness {X}, where X is the number of cards in their owner's hand."
 }, {
     "difficulty": 0,
     "text": "Whenever a player would draw a card, that player clashes with an opponent. If he or she wins, he or she draws two cards instead. Otherwise, he or she draws none and that opponent draws one card instead."
@@ -264,7 +264,7 @@ embleme = [{
     "text": "All creature cards in all graveyards have unearth {0}."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, return all creature, artifact and land cards from all graveyards to the battlefield, then return all enchantment cards from all graveyards to the battlefield, then cast all instant or sorcery cards in all graveyards."
+    "text": "When this emblem enters the command zone, return all creature, artifact and land cards from all graveyards to the battlefield under their owner's control, then return all enchantment cards from all graveyards to the battlefield under their owner's control, then all players cast all instant or sorcery cards in their graveyards if able."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player rolls a twenty-sdifficultyed dice. All creatures get +X/+X, where X is the result of its controller's dice roll."
@@ -357,10 +357,10 @@ embleme = [{
     "text": "Players may play face-up exiled cards they own."
 }, {
     "difficulty": 0,
-    "text": "Whenever a player plays a spell, he or she may pay {2}. If he or she doesn't, he or she loses 5 life."
+    "text": "Whenever a player casts a spell, he or she may pay {2}. If he or she doesn't, he or she loses 5 life."
 }, {
     "difficulty": 0,
-    "text": "Players can't tap permanents to cast spells or activate abilities that aren't mana abilities."
+    "text": "Players can't tap or untap permanents to cast spells or activate abilities that aren't mana abilities."
 }, {
     "difficulty": 0,
     "text": "Creatures' power and toughness can't be modified. (It can still be set and switched.)"
