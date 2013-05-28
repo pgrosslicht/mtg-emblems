@@ -267,7 +267,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, return all creature, artifact and land cards from all graveyards to the battlefield under their owner's control, then return all enchantment cards from all graveyards to the battlefield under their owner's control, then all players cast all instant or sorcery cards in their graveyards if able."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, each player rolls a twenty-sdifficultyed dice. All creatures get +X/+X, where X is the result of its controller's dice roll."
+    "text": "When this emblem enters the command zone, each player rolls a twenty-sided dice. All creatures get +X/+X, where X is the result of its controller's dice roll."
 }, {
     "difficulty": 0,
     "text": "Whenever a source would deal damage to a player, that player may pay {2}. If he or she does, that source deals no damage instead."
@@ -276,19 +276,19 @@ embleme = [{
     "text": "Players can only cast one spell and activate one ability each turn. (Mana abilities don't count.)"
 }, {
     "difficulty": 0,
-    "text": "Whenever a permanent would be sacrificed, it phases out instead. (If the sacrificing was part of a cost, the cost is still padifficulty.)"
+    "text": "Whenever a permanent would be sacrificed, it phases out instead. (If the sacrificing was part of a cost, the cost is still paid.)"
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose five other game emblems at random. Then they enter the command zone. You cannot choose the same emblem more than once."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, two twenty-sdifficultyed dice are rolled. Each player's life total becomes the total of the results of the dice rolls."
+    "text": "When this emblem enters the command zone, two twenty-sided dice are rolled. Each player's life total becomes the total of the results of the dice rolls."
 }, {
     "difficulty": 0,
     "text": "All creatures have absorb 3."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, an even-sdifficultyed dice is rolled. Then, if a player has one card in his or her hand and the result was even, that player wins the game, and if a player has one card in his or her hand and the result was odd, that player loses the game."
+    "text": "When this emblem enters the command zone, an even-sided dice is rolled. Then, if a player has one card in his or her hand and the result was even, that player wins the game, and if a player has one card in his or her hand and the result was odd, that player loses the game."
 }, {
     "difficulty": 0,
     "text": "Whenever a player untaps a permanent he or she controls, that player untaps target tapped permanent an opponent controls."
@@ -306,7 +306,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, each player discards his or her hand."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, each player rolls a twenty-sdifficultyed die. If a player rolls a 1, he or she loses the game."
+    "text": "When this emblem enters the command zone, each player rolls a twenty-sided die. If a player rolls a 1, he or she loses the game."
 }, {
     "difficulty": 0,
     "text": "Whenever a non instant or sorcery card would be put into a graveyard from anywhere, it's owner puts it onto the battlefield instead."
