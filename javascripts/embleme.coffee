@@ -47,6 +47,7 @@ get_emblem2 = ->
 reset_emblems = ->
   embleme2 = embleme.slice 0
   $('#embleme').hide('slow').html('')
+  $('#permanent_embleme').hide('slow').html('')
   $('#anzahl').text('0')
 
 $ -> 
