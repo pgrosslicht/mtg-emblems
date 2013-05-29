@@ -111,7 +111,8 @@ embleme = [{
     "text": "Whenever a creature is dealt damage, exile it."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone."
+    "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone.",
+    "draw_others": 2
 }, {
     "difficulty": 0,
     "text": "Whenever a permanent becomes tapped, its controller sacrifices it."
@@ -279,7 +280,7 @@ embleme = [{
     "text": "Whenever a permanent would be sacrificed, it phases out instead. (If the sacrificing was part of a cost, the cost is still paid.)"
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, choose five other game emblems at random. Then they enter the command zone. You cannot choose the same emblem more than once.",
+    "text": "When this emblem enters the command zone, choose five game emblems at random. Then they enter the command zone.",
     "draw_others": 5
 }, {
     "difficulty": 0,
@@ -334,7 +335,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, each player flips a coin. Each player that loses the flip skips his or her next turn."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, choose two other emblems at random. Then they enter the command zone as non-game emblems.",
+    "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone as non-game emblems.",
     "draw_others": 2,
     "permanent": true
 }, {
