@@ -339,7 +339,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, each player puts the top ten cards of his or her library into his or her graveyard."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, all player reveal the top card of their library. The player whose card had the highest converted mana cost gains 4 life and loses 2 poison counters. If two or more players tie for the highest converted mana cost, each player loses 4 life and gets 2 poison counters."
+    "text": "When this emblem enters the command zone, all players reveal the top card of their library. The player whose card had the highest converted mana cost gains 4 life and loses 2 poison counters. If two or more players tie for the highest converted mana cost, each player loses 4 life and gets 2 poison counters."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose a player at random. That player takes an extra turn now."
