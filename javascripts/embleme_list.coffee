@@ -279,7 +279,8 @@ embleme = [{
     "text": "Whenever a permanent would be sacrificed, it phases out instead. (If the sacrificing was part of a cost, the cost is still paid.)"
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, choose five other game emblems at random. Then they enter the command zone. You cannot choose the same emblem more than once."
+    "text": "When this emblem enters the command zone, choose five other game emblems at random. Then they enter the command zone. You cannot choose the same emblem more than once.",
+    "draw_others": 5
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, two twenty-sided dice are rolled. Each player's life total becomes the total of the results of the dice rolls."
@@ -333,7 +334,9 @@ embleme = [{
     "text": "When this emblem enters the command zone, each player flips a coin. Each player that loses the flip skips his or her next turn."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, choose two other emblems at random. Then they enter the command zone as non-game emblems."
+    "text": "When this emblem enters the command zone, choose two other emblems at random. Then they enter the command zone as non-game emblems.",
+    "draw_others": 2,
+    "permanent": true
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player puts the top ten cards of his or her library into his or her graveyard."
