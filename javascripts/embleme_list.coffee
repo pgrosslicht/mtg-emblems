@@ -370,5 +370,8 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "At the beginning of each player's upkeep, until that player's next turn, tapped creatures that player controls can block as if they weren't tapped."
+}, {
+    "difficulty": 0,
+    "text": "All spells have split second."
 }]
 
