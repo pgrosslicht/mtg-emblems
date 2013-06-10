@@ -373,5 +373,22 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "All spells have split second."
+}, {
+    "difficulty": 0,
+    "text": "When this emblem enters the command zone, remove all counters from all permanents."
+}, {
+    "difficulty": 0,
+    "text": "Whenever a counter is put on a permanent, that permanent's controller loses 1 life.\nWhenever a counter is removed from a permanent, that permanent's controller gains 1 life."
+}, {
+    "difficulty": 0,
+    "text": "All creatures have vigilance, attack each turn if able and block each turn if able."
+}, {
+    "difficulty": 0,
+    "text": "All permanents have \"{T}: Target player gains control of this permanent.\"."
+}, {
+    "difficulty": 0,
+    "text": "When this emblem enters the command zone, choose a basic land type at random. All lands are the chosen type."
+}, {
+    "difficulty": 0,
+    "text": "Each player may bid life. A random player starts the bidding with a bid of any number. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid and takes an extra turn now."
 }]
-
