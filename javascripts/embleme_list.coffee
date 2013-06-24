@@ -199,9 +199,6 @@ embleme = [{
     "text": "At the beginning of each player's upkeep, that player may pay X life. If he or she does, he or she draws X cards."
 }, {
     "difficulty": 0,
-    "text": "When a phase ends (but not a step), any unused mana left in a player's mana pool is lost. That player loses 1 life for each one mana lost this way."
-}, {
-    "difficulty": 0,
     "text": "Players can't activate activated abilities that aren't mana abilities."
 }, {
     "difficulty": 0,
@@ -343,7 +340,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, each player puts the top ten cards of his or her library into his or her graveyard."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, all player reveal the top card of their library. The player whose card had the highest converted mana cost gains 4 life and loses 2 poison counters. If two or more players tie for the highest converted mana cost, each player loses 4 life and gets 2 poison counters."
+    "text": "When this emblem enters the command zone, all players reveal the top card of their library. The player whose card had the highest converted mana cost gains 4 life and loses 2 poison counters. If two or more players tie for the highest converted mana cost, each player loses 4 life and gets 2 poison counters."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose a player at random. That player takes an extra turn now."
@@ -374,5 +371,25 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "At the beginning of each player's upkeep, until that player's next turn, tapped creatures that player controls can block as if they weren't tapped."
+}, {
+    "difficulty": 0,
+    "text": "All spells have split second."
+}, {
+    "difficulty": 0,
+    "text": "When this emblem enters the command zone, remove all counters from all permanents."
+}, {
+    "difficulty": 0,
+    "text": "Whenever a counter is put on a permanent, that permanent's controller loses 1 life.\nWhenever a counter is removed from a permanent, that permanent's controller gains 1 life."
+}, {
+    "difficulty": 0,
+    "text": "All creatures have vigilance, attack each turn if able and block each turn if able."
+}, {
+    "difficulty": 0,
+    "text": "All permanents have \"{T}: Target player gains control of this permanent.\"."
+}, {
+    "difficulty": 0,
+    "text": "When this emblem enters the command zone, choose a basic land type at random. All lands are the chosen type."
+}, {
+    "difficulty": 0,
+    "text": "Each player may bid life. A random player starts the bidding with a bid of any number. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid and takes an extra turn now."
 }]
-
