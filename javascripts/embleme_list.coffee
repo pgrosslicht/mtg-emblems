@@ -198,9 +198,6 @@ embleme = [{
     "text": "At the beginning of each player's upkeep, that player may pay X life. If he or she does, he or she draws X cards."
 }, {
     "difficulty": 0,
-    "text": "When a phase ends (but not a step), any unused mana left in a player's mana pool is lost. That player loses 1 life for each one mana lost this way."
-}, {
-    "difficulty": 0,
     "text": "Players can't activate activated abilities that aren't mana abilities."
 }, {
     "difficulty": 0,
