@@ -1,5 +1,5 @@
-Magic Embleme
-===========
+Magic Emblems
+=============
 
 If you are searching for a way to spice up your old boring Magic: The Gathering game, then look no further. 
 Magic Emblems is quick and easy way to add excitement, fun and a lot of tide turning to every game you play.
