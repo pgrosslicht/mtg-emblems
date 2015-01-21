@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html manifest='cache.manifest'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Magic Embleme</title>
+    <!-- Sets initial viewport load and disables zooming -->
+    <meta content='initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+    <!-- Include the compiled Ratchet CSS -->
+    <link href='stylesheets/ratchet.min.css' rel='stylesheet'>
+    <link href='stylesheets/mana.min.css' rel='stylesheet'>
+    <!-- Include the compiled Ratchet JS -->
+    <script src='javascripts/ratchet.min.js'></script>
+  </head>
+  <body>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class='bar-title'>
+      <h1 class='title'>Magic Embleme</h1>
+    </header>
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class='content'>
+      <div class='content-padded'>
+        <br>
+        <a class='button-positive button-block' id='send'>Gimme an emblem!</a>
+        <a class='button-negative button-block' id='reset'>
+          Embleme zurücksetzen
+          <span class='count' id='anzahl'>0</span>
+        </a>
+        <br>
+        <ul class='list inset' id='embleme' style='display: none'></ul>
+        <ul class='list inset'><li id='total-emblem-count'></li></ul>
+      </div>
+    </div>
+    <script src='javascripts/jquery-2.1.3.min.js'></script>
+    <script src='javascripts/embleme.min.js'></script>
+  </body>
+</html>
