@@ -8,7 +8,7 @@ If you want to compile it, `cd` to your `javascript` directory and execute the f
 ```bash
 coffee -cj embleme.js embleme_list.coffee embleme.coffee
 ```
-If you can't or don't want to compile it, then you can use the precompiled version [here](http://embleme.mymagiccards.info)
+If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/)
 
 ## Contributing
 
