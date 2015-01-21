@@ -6,11 +6,17 @@ Magic Emblems is quick and easy way to add excitement, fun and a lot of tide tur
 
 If you want to compile it, `cd` to your `javascript` directory and execute the following command. Make sure you have [coffeescript](http://coffeescript.org/) installed.
 ```bash
-cat embleme_list.coffee embleme.coffee | coffee --compile --stdio > embleme.js
+coffee --compile emblems_list.coffee
+coffee --compile emblems.coffee
 ```
 If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/)
 
-## Contributing
+How to Play
+===========
+If you play with a local group, one of you opens Magic Emblems on his phone. Then you request an emblem every turn, discarding the effects of the older emblems (unless it is stated differently) and have fun!
+
+Contributing
+============
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)

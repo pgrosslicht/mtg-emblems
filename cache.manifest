@@ -6,4 +6,5 @@ CACHE MANIFEST
 ./images/phyrexia-sprites.png
 ./javascripts/ratchet.min.js
 .javascripts/jquery-2.1.3.min.js
-./javascripts/embleme.min.js
+./javascripts/emblems_list.min.js
+./javascripts/emblems.min.js
