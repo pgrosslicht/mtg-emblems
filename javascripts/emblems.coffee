@@ -21,7 +21,7 @@ get_emblem = (anzahl, automatic, permanent) ->
   for [0...anzahl]
     shuffle(embleme3)
     chosen_emblem = embleme3[0]
-    emblem = $('<li>' + parse_mana(chosen_emblem.text + '</li>')).hide()
+    emblem = $('<li class="table-view-cell">' + parse_mana(chosen_emblem.text + '</li>')).hide()
     if automatic && !permanent then emblem.css('background-color', '#ccc')
     if permanent
       emblem.css('background-color', 'yellow')
@@ -36,7 +36,7 @@ get_emblem = (anzahl, automatic, permanent) ->
 get_emblem2 = ->
   shuffle(embleme2)
   chosen_emblem = embleme2.pop()
-  emblem = $('<li>' + parse_mana(chosen_emblem.text + '</li>')).hide()
+  emblem = $('<li class="table-view-cell">' + parse_mana(chosen_emblem.text + '</li>')).hide()
   $('#embleme').prepend(emblem).show('slow')
   $('#embleme > li').first().fadeIn('slow')
   $('#anzahl').text(parseInt($('#anzahl').text()) + 1)
@@ -50,8 +50,8 @@ reset_emblems = ->
   $('#permanent_embleme').hide('slow').html('')
   $('#anzahl').text('0')
 
-$ -> 
-  $('#send').click -> 
+$ ->
+  $('#send').click ->
     get_emblem2()
   $('#reset').click ->
     reset_emblems()

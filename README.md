@@ -6,10 +6,9 @@ Magic Emblems is quick and easy way to add excitement, fun and a lot of tide tur
 
 If you want to compile it, `cd` to your `javascript` directory and execute the following command. Make sure you have [coffeescript](http://coffeescript.org/) installed.
 ```bash
-coffee --compile emblems_list.coffee
-coffee --compile emblems.coffee
+cat emblems_list.coffee emblems.coffee | coffee --compile --stdio > emblems.js
 ```
-If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/)
+If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/).
 
 How to Play
 ===========
