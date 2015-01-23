@@ -8,6 +8,18 @@ parse_mana = (html) ->
 
   return html
 
+htmlForTextWithEmbeddedNewlines = (text) ->
+  htmls = []
+  lines = text.split(/\n/)
+
+  tmpDiv = $(document.createElement("div"))
+  i = 0
+
+  while i < lines.length
+    htmls.push tmpDiv.text(lines[i]).html()
+    i++
+  htmls.join "<br>"
+
 shuffle = (a) ->
   i = a.length
   while --i > 0
@@ -21,7 +33,7 @@ get_emblem = (anzahl, automatic, permanent) ->
   for [0...anzahl]
     shuffle(embleme3)
     chosen_emblem = embleme3[0]
-    emblem = $('<li class="table-view-cell">' + parse_mana(chosen_emblem.text + '</li>')).hide()
+    emblem = $('<li class="table-view-cell">' + parse_mana(htmlForTextWithEmbeddedNewlines(chosen_emblem.text) + '</li>')).hide()
     if automatic && !permanent then emblem.css('background-color', '#ccc')
     if permanent
       emblem.css('background-color', 'yellow')
@@ -36,7 +48,7 @@ get_emblem = (anzahl, automatic, permanent) ->
 get_emblem2 = ->
   shuffle(embleme2)
   chosen_emblem = embleme2.pop()
-  emblem = $('<li class="table-view-cell">' + parse_mana(chosen_emblem.text + '</li>')).hide()
+  emblem = $('<li class="table-view-cell">' + parse_mana(htmlForTextWithEmbeddedNewlines(chosen_emblem.text) + '</li>')).hide()
   $('#embleme').prepend(emblem).show('slow')
   $('#embleme > li').first().fadeIn('slow')
   $('#anzahl').text(parseInt($('#anzahl').text()) + 1)
