@@ -265,7 +265,7 @@ embleme = [{
     "text": "When this emblem enters the command zone, return all creature, artifact and land cards from all graveyards to the battlefield under their owner's control, then return all enchantment cards from all graveyards to the battlefield under their owner's control, then all players cast all instant or sorcery cards in their graveyards if able."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, each player rolls a twenty-sided dice. All creatures get +X/+X, where X is the result of its controller's dice roll."
+    "text": "When this emblem enters the command zone, each player rolls a twenty-sided dice.\nAll creatures get +X/+X, where X is the result of its controller's dice roll."
 }, {
     "difficulty": 0,
     "text": "Whenever a source would deal damage to a player, that player may pay {2}. If he or she does, that source deals no damage instead."
