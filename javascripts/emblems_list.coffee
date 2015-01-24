@@ -392,4 +392,10 @@ embleme = [{
 }, {
     "difficulty": 0,
     "text": "Each player may bid life. A random player starts the bidding with a bid of any number. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid and takes an extra turn now."
+}, {
+    "difficulty": 1,
+    "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for an emblem. Remove each emblem with the most votes or tied for most votes from the command zone."
+}, {
+    "difficulty": 2,
+    "text": "When this emblem enters the command zone, each player manifests the top ten cards of his or her library."
 }]
