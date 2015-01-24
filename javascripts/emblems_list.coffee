@@ -262,7 +262,7 @@ embleme = [{
     "text": "All creature cards in all graveyards have unearth {0}."
 }, {
     "difficulty": 0,
-    "text": "When this emblem enters the command zone, return all creature, artifact and land cards from all graveyards to the battlefield under their owner's control, then return all enchantment cards from all graveyards to the battlefield under their owner's control, then all players cast all instant or sorcery cards in their graveyards if able."
+    "text": "When this emblem enters the command zone, starting with a random player, each player returns all creature, artifact and land cards from all graveyards to the battlefield under their owner's control, then each player returns all enchantment cards from all graveyards to the battlefield under their owner's control, then each player casts all instant or sorcery cards in his or her graveyard if able."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player rolls a twenty-sided dice.\nAll creatures get +X/+X, where X is the result of its controller's dice roll."
@@ -296,7 +296,7 @@ embleme = [{
     "text": "Lands are every basic land type in addition to their other types."
 }, {
     "difficulty": 0,
-    "text": "Whenever anything is randomly chosen, any player may choose to pay 3 life. If a player does, the choice gets negated and is chosen again."
+    "text": "Whenever anything is randomly chosen, starting with a random player, any player may choose to pay 3 life. If a player does, the choice gets negated and is chosen again."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player shuffles his or her library."
