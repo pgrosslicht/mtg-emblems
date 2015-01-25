@@ -1,41 +1,11 @@
-<!DOCTYPE html>
-<html manifest='cache.manifest'>
-  <head>
-    <meta charset='utf-8'>
-    <title>Magic Emblems</title>
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!-- Include the compiled Ratchet CSS -->
-    <link href='stylesheets/ratchet.min.css' rel='stylesheet'>
-    <link href='stylesheets/mana.min.css' rel='stylesheet'>
-    <!-- Include the compiled Ratchet JS -->
-    <script src='javascripts/ratchet.min.js'></script>
-  </head>
-  <body>
-    <!-- Make sure all your bars are the first things in your <body> -->
-    <header class='bar bar-nav'>
-      <h1 class='title'>Magic Emblems</h1>
-    </header>
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class='content'>
-      <div class='content-padded'>
-        <div class="card">
-          <a class='btn btn-positive btn-block' id='send'>Gimme an emblem!</a>
-          <a class='btn btn-negative btn-block' id='reset'>
-            Reset emblems
-            <span class='badge badge-positive' id='anzahl'>0</span>
-          </a>
-          <br>
-          <ul class='table-view' id='permanent_embleme' style='display: none'></ul>
-          <ul class='table-view' id='embleme' style='display: none'></ul>
-          <ul class='table-view'><li class='table-view-cell' id='total-emblem-count'></li></ul>
-        </div>
-      </div>
-    </div>
-    <script src='javascripts/jquery-2.1.3.min.js'></script>
-    <script src='javascripts/emblems.min.js'></script>
-  </body>
-</html>
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Magic: the Gathering Emblems</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.2b5bf22d.css">  <body ng-app="mtgEmblemsApp"> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Add your site or application content here --> <div class="container"> <div class="header"> <ul class="nav nav-pills pull-right" ng-controller="HeaderCtrl"> <li ng-class="{ active: isActive('/')}"><a ng-href="#/">Main</a></li> <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li> </ul> <h3 class="text-muted">Magic: the Gathering Emblems</h3> </div> <div ng-view=""></div> <div class="footer"> <p>&copy; by Patrick 2015</p> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.76f279db.js"></script>
+    <![endif]--> <script src="scripts/vendor.ae38ac13.js"></script> <script src="scripts/scripts.8f191969.js"></script>  
