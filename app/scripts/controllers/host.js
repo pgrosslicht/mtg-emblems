@@ -2,23 +2,28 @@
 
 /**
  * @ngdoc function
- * @name mtgEmblemsApp.controller:MainCtrl
+ * @name mtgEmblemsApp.controller:HostCtrl
  * @description
- * # MainCtrl
+ * # HostCtrl
  * Controller of the mtgEmblemsApp
  */
 angular.module('mtgEmblemsApp')
-  .controller('MainCtrl', function ($scope, $http) {
-      $scope.show_emblems = [];
+  .controller('HostCtrl', function ($scope, $routeParams, $http, $firebase) {
+      var ref = new Firebase("https://mtg-emblems.firebaseio.com/" + $routeParams.gameId);
+      var root = $firebase(ref);
+      var emblems = $firebase(ref.child("emblems"));
+      var metadata = $firebase(ref.child("metadata"));
+      $scope.show_emblems = emblems.$asArray();
+      
 
       $scope.emblem_index = 0;
       $scope.total_index = 0;
       $scope.rounds = 0;
 
       $scope.reset = function () {
-        $scope.show_emblems = [];
-        shuffleArray($scope.emblems, false);
-        shuffleArray($scope.all_emblems, false);
+        root.$remove();
+        shuffleArray($scope.emblems);
+        shuffleArray($scope.all_emblems);
         $scope.rounds = 0;
         $scope.total_index = 0;
         $scope.emblem_index = 0;
@@ -29,13 +34,13 @@ angular.module('mtgEmblemsApp')
         var draw_others_as_permanent = false;
         var to_add = null;
         if ($scope.emblem_index >= $scope.emblems.length - 1) {
-            shuffleArray($scope.emblems, false);
+            shuffleArray($scope.emblems);
             $scope.emblem_index = 0;
         } else {
             $scope.emblem_index++;
         }
         if (permanent) {
-          shuffleArray($scope.all_emblems, false);
+          shuffleArray($scope.all_emblems);
           to_add = JSON.parse(JSON.stringify($scope.all_emblems[0]));
         } else {
           to_add = JSON.parse(JSON.stringify($scope.emblems[$scope.emblem_index]));
@@ -52,7 +57,7 @@ angular.module('mtgEmblemsApp')
         } else {
           $scope.rounds++;
         }
-        $scope.show_emblems.push(to_add);
+        $scope.show_emblems.$add(to_add);
         if ($scope.emblems[$scope.emblem_index].draw_others > 0) {
           draw_others = $scope.emblems[$scope.emblem_index].draw_others;
           if ($scope.emblems[$scope.emblem_index].permanent) {
@@ -68,8 +73,8 @@ angular.module('mtgEmblemsApp')
       .success(function(data, status, headers, config){
         $scope.all_emblems = data;
         $scope.emblems = data;
-        shuffleArray($scope.emblems, false);
-        shuffleArray($scope.all_emblems, false);
+        shuffleArray($scope.emblems);
+        shuffleArray($scope.all_emblems);
       })
       .error(function(data, status, headers, config) {
       

@@ -15,13 +15,22 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/play/:gameId', {
+        templateUrl: 'views/play.html',
+        controller: 'HostCtrl'
+      })
+      .when('/watch/:gameId', {
+        templateUrl: 'views/watch.html',
+        controller: 'WatchCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -32,13 +41,19 @@ angular
       });
   });
 
-var shuffleArray = function(array) {
+var shuffleArray = function(array, seed) {
   var m = array.length, t, i;
+  var rng = null;
+  if (seed === false) {
+    rng = new Math.seedrandom();
+  } else {
+    rng = new Math.seedrandom(seed);
+  }
 
   // While there remain elements to shuffle
   while (m) {
     // Pick a remaining element…
-    i = Math.floor(Math.random() * m--);
+    i = Math.floor(rng() * m--);
 
     // And swap it with the current element.
     t = array[m];
