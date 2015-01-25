@@ -64,7 +64,7 @@ angular.module('mtgEmblemsApp')
         }
       };
 
-    $http.get('/data/emblems.json')
+    $http.get('./data/emblems.json')
       .success(function(data, status, headers, config){
         $scope.all_emblems = data;
         $scope.emblems = data;
