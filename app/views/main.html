@@ -1,0 +1,13 @@
+<div class="container">
+  <button ng-click="next(false, false)" class="btn btn-primary btn-lg" type="button">New emblem <span class="badge">{{rounds}}</span></button>
+  <button ng-click="reset()" class="btn btn-danger" type="button">Reset</button>
+  <ul class="list-group" style="white-space:pre-wrap;">
+    <li class="list-group-item" ng-repeat="emblem in show_emblems | filter:{type:'permanent'} | orderBy:'id':true" style='background-color: #B76633; color: #FFF;'>{{emblem.text | manaSymbols}}</li>
+  </ul>
+  <ul class="list-group" style="white-space:pre-wrap;">
+    <li ng-repeat="emblem in show_emblems | filter:{type:'standard'} | orderBy:'id':true" ng-class="emblem.is_automatic ? 'list-group-item active' : 'list-group-item'" ng-bind-html="emblem.text | manaSymbols"></li>
+  </ul>
+
+  {{emblems.length}} Embleme.
+</div>
+
