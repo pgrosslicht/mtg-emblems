@@ -91,4 +91,11 @@ body {
   }
 }
 
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  border-color: #C2C2C2;
+}
+
 @import "mana.scss";
