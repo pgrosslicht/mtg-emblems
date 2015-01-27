@@ -11,7 +11,7 @@ grunt serve #provides you with a built-in server with live-reload
 grunt build #minfies all the js and css and puts the files in to dist/
 grunt gh-pages #takes everything from dist/ and pushes it to your gh-pages branch
 ```
-If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/).
+If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-emblems/).
 
 Also, you are going to need a [Firebase](https://firebase.com) account. Please update the URLs accordingly in the source code.
 
