@@ -84,7 +84,7 @@
     "text": "Whenever a player casts a spell for the first time in a turn, counter that spell. This ability can counter spells that can't be countered as though they couldn't not be countered."
 }, {
     "difficulty": 0,
-    "text": "At the beginning of each player's upkeep, that player flips a coin for each permanent he or she controls. If he ore she loses the flip, he or she sarcifices that permanent."
+    "text": "At the beginning of each player's upkeep, that player flips a coin for each permanent he or she controls. If he or she loses the flip, he or she sarcifices that permanent."
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, all permanents phase out.\nWhen this emblem leaves the command zone, all permanents phase in.\nPermanents can't phase in."
@@ -308,7 +308,7 @@
     "text": "When this emblem enters the command zone, each player rolls a twenty-sided die. If a player rolls a 1, he or she loses the game."
 }, {
     "difficulty": 0,
-    "text": "Whenever a non instant or sorcery card would be put into a graveyard from anywhere, it's owner puts it onto the battlefield instead."
+    "text": "Whenever a non instant or sorcery card would be put into a graveyard from anywhere, its owner puts it onto the battlefield instead."
 }, {
     "difficulty": 0,
     "text": "All permanents have protection from artifacts and enchantments."
@@ -398,4 +398,7 @@
 }, {
     "difficulty": 2,
     "text": "When this emblem enters the command zone, each player manifests the top ten cards of his or her library."
+}, {
+    "difficulty": 2,
+    "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for a permanent or suspended card. Move all counters from all permanents and suspended cards to the card with the most votes. If two or more cards are tied for most votes, choose one of them at random."
 }]
