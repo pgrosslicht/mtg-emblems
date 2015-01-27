@@ -75,7 +75,7 @@
     "text": "Spells cost {1} less to cast."
 }, {
     "difficulty": 0,
-    "text": "At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able."
+    "text": "At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able. (That player draws a card first.)"
 }, {
     "difficulty": 0,
     "text": "Whenever a player casts a spell, counter that spell unless it's controller pays {X}, where X is that spell's converted mana cost."
