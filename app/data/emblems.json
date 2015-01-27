@@ -401,4 +401,7 @@
 }, {
     "difficulty": 2,
     "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for a permanent or suspended card. Move all counters from all permanents and suspended cards to the card with the most votes. If two or more cards are tied for most votes, choose one of them at random."
+}, {
+    "difficulty": 3,
+    "text": "Whenever a player would draw a card, that player may instead search his or her library for a card, put that card into his or her hand, then shuffle his or her library."
 }]
