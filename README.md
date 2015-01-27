@@ -4,11 +4,16 @@ Magic Emblems
 If you are searching for a way to spice up your old boring Magic: The Gathering game, then look no further. 
 Magic Emblems is quick and easy way to add excitement, fun and a lot of tide turning to every game you play.
 
-If you want to compile it, `cd` to your `javascript` directory and execute the following command. Make sure you have [coffeescript](http://coffeescript.org/) installed.
+If you want to run it yourself, `cd` in the root directory and execute the following commands. Make sure you have [npm](http://nodejs.org) and [grunt-cli](http://gruntjs.com) installed.
 ```bash
-cat emblems_list.coffee emblems.coffee | coffee --compile --stdio > emblems.js
+npm install #installs all the dependencies
+grunt serve #provides you with a built-in server with live-reload
+grunt build #minfies all the js and css and puts the files in to dist/
+grunt gh-pages #takes everything from dist/ and pushes it to your gh-pages branch
 ```
 If you can't or don't want to compile it, then you can use the precompiled version [here](https://pdgwien.github.io/mtg-embleme/).
+
+Also, you are going to need a [Firebase](https://firebase.com) account. Please update the URLs accordingly in the source code.
 
 How to Play
 ===========
