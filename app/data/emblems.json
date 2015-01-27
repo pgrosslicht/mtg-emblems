@@ -398,4 +398,7 @@
 }, {
     "difficulty": 2,
     "text": "When this emblem enters the command zone, each player manifests the top ten cards of his or her library."
+}, {
+    "difficulty": 2,
+    "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for a permanent. Move all counters to the permanent with the most votes. If two or more permanents are tied for most votes, choose one of them at random."
 }]
