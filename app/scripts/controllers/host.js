@@ -13,44 +13,27 @@ angular.module('mtgEmblemsApp')
       var root = $firebase(ref);
       var emblems = $firebase(ref.child("emblems"));
       var metadata = $firebase(ref.child("metadata"));
+      var rng = null;
       $scope.show_emblems = emblems.$asArray();
       
 
-      $scope.emblem_index = 0;
-      $scope.total_index = 0;
+      $scope.index = 0;
       $scope.rounds = 0;
 
       $scope.reset = function () {
         root.$remove();
         shuffleArray($scope.emblems);
-        shuffleArray($scope.all_emblems);
         $scope.rounds = 0;
-        $scope.total_index = 0;
-        $scope.emblem_index = 0;
+        $scope.index = 0;
       }
 
       $scope.next = function (permanent, automatic) {
         var i, draw_others = 0;
         var draw_others_as_permanent = false;
         var to_add = null;
-        if ($scope.emblem_index >= $scope.emblems.length - 1) {
-            shuffleArray($scope.emblems);
-            $scope.emblem_index = 0;
-        } else {
-            $scope.emblem_index++;
-        }
-        if (permanent) {
-          shuffleArray($scope.all_emblems);
-          to_add = JSON.parse(JSON.stringify($scope.all_emblems[0]));
-        } else {
-          to_add = JSON.parse(JSON.stringify($scope.emblems[$scope.emblem_index]));
-        }
-        to_add.id = $scope.total_index;
-        $scope.total_index++;
+        to_add = $scope.getRandomCard();
         if (permanent) {
           to_add.type = 'permanent';
-        } else {
-          to_add.type = 'standard';
         }
         if (automatic) {
           to_add.is_automatic = true;
@@ -58,10 +41,10 @@ angular.module('mtgEmblemsApp')
           $scope.rounds++;
         }
         $scope.show_emblems.$add(to_add);
-        if ($scope.emblems[$scope.emblem_index].draw_others > 0) {
-          draw_others = $scope.emblems[$scope.emblem_index].draw_others;
-          if ($scope.emblems[$scope.emblem_index].permanent) {
-            draw_others_as_permanent = $scope.emblems[$scope.emblem_index].permanent;
+        if (to_add.draw_others > 0) {
+          draw_others = to_add.draw_others;
+          if (to_add.permanent) {
+            draw_others_as_permanent = to_add.permanent;
           }
           for (i = 0; i < draw_others; i++) {
             $scope.next(draw_others_as_permanent, true);
@@ -69,12 +52,19 @@ angular.module('mtgEmblemsApp')
         }
       };
 
+      $scope.getRandomCard = function () {
+        var rand_index = Math.floor(rng() * $scope.emblems.length);
+        var emblem = JSON.parse(JSON.stringify($scope.emblems[rand_index]));
+        emblem.id = $scope.index++;
+        emblem.type = 'standard';
+        return emblem;
+      }
+
     $http.get('./data/emblems.json')
       .success(function(data, status, headers, config){
-        $scope.all_emblems = data;
         $scope.emblems = data;
         shuffleArray($scope.emblems);
-        shuffleArray($scope.all_emblems);
+        rng = new Math.seedrandom();
       })
       .error(function(data, status, headers, config) {
       
