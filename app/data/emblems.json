@@ -404,4 +404,7 @@
 }, {
     "difficulty": 3,
     "text": "Whenever a player would draw a card, that player may instead search his or her library for a card, put that card into his or her hand, then shuffle his or her library."
+}, {
+    "difficulty": 2,
+    "text": "Attacking creatures have indestructible."
 }]
