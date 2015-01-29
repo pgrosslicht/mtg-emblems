@@ -7,4 +7,5 @@ env:
   - GH_REF: github.com/pdgwien/mtg-emblems.git
   - secure: SR/yjmqEquLUjcwvTdq8Cy00QDbNXJKIuOoG7XCtqfs1YAfQtfXgmlEycDrGdkMJYPKPJFJRjl4IR9vvKyCrXGlIan3haQaxd3IvOFCJfNveyZZ7ib58ZLRzzLHGHPYp0Q75nbXsQ+BHhRO1Nq1qxc2uOcWxngEZAk7OlXdPQgk=
 before_script:
-  - npm install -g grunt-cli
+  - npm install -g grunt-cli bower
+  - bower install
