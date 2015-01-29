@@ -385,14 +385,6 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    },
-
-    'gh-pages': {
-      options: {
-        base: 'dist',
-        repo: 'https://${GH_TOKEN}@${GH_REF}" master:gh-pages"'
-      },
-      src: ['**']
     }
   });
 
@@ -448,8 +440,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.registerTask('deploy', [
-    'build',
-    'gh-pages'
-  ]);
 };
