@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '0.10'
+script: grunt deploy
+env:
+  global:
+  - GH_REF: github.com/pdgwien/mtg-emblems.git
+  - secure: SR/yjmqEquLUjcwvTdq8Cy00QDbNXJKIuOoG7XCtqfs1YAfQtfXgmlEycDrGdkMJYPKPJFJRjl4IR9vvKyCrXGlIan3haQaxd3IvOFCJfNveyZZ7ib58ZLRzzLHGHPYp0Q75nbXsQ+BHhRO1Nq1qxc2uOcWxngEZAk7OlXdPQgk=

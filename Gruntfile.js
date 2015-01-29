@@ -389,7 +389,8 @@ module.exports = function (grunt) {
 
     'gh-pages': {
       options: {
-        base: 'dist'
+        base: 'dist',
+        repo: 'https://${GH_TOKEN}@${GH_REF}" master:gh-pages"'
       },
       src: ['**']
     }
@@ -445,5 +446,10 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'gh-pages'
   ]);
 };
