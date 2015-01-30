@@ -11,7 +11,6 @@ angular.module('mtgEmblemsApp')
   .controller('MainCtrl', function ($scope, $http) {
       var rng = null;
       $scope.showEmblems = [];
-      $scope.index = 0;
       $scope.rounds = 0;
       $scope.gameId = makeId(5);
 
@@ -19,12 +18,10 @@ angular.module('mtgEmblemsApp')
         $scope.showEmblems = [];
         shuffleArray($scope.emblems, false);
         $scope.rounds = 0;
-        $scope.index = 0;
       };
 
       $scope.next = function (permanent, automatic) {
-        var i, drawOthers = 0;
-        var drawOthersAsPermanent = false;
+        var i, drawOthers, drawOthersAsPermanent = 0;
         var toAdd = null;
         toAdd = $scope.getRandomCard();
         if (permanent || toAdd.isPermanent) {
@@ -36,13 +33,16 @@ angular.module('mtgEmblemsApp')
           $scope.rounds++;
         }
         $scope.showEmblems.push(toAdd);
-        if (toAdd.drawOthers > 0) {
+         if (toAdd.drawOthers > 0) {
           drawOthers = toAdd.drawOthers;
-          if (toAdd.drawOthersAsPermanent) {
-            drawOthersAsPermanent = toAdd.drawOthersAsPermanent;
-          }
           for (i = 0; i < drawOthers; i++) {
-            $scope.next(drawOthersAsPermanent, true);
+            $scope.next(false, true);
+          }
+        }
+        if (toAdd.drawOthersAsPermanent > 0) {
+          drawOthersAsPermanent = toAdd.drawOthersAsPermanent;
+          for (i = 0; i < drawOthersAsPermanent; i++) {
+            $scope.next(true, true);
           }
         }
       };
@@ -50,7 +50,6 @@ angular.module('mtgEmblemsApp')
       $scope.getRandomCard = function () {
         var randIndex = Math.floor(rng() * $scope.emblems.length);
         var emblem = JSON.parse(JSON.stringify($scope.emblems[randIndex]));
-        emblem.id = $scope.index++;
         emblem.type = 'standard';
         return emblem;
       };

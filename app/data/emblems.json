@@ -330,8 +330,7 @@
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone as non-game emblems.",
-    "drawOthers": 2,
-    "drawOthersAsPermanent": true
+    "drawOthersAsPermanent": 2
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player puts the top ten cards of his or her library into his or her graveyard."
