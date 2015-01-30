@@ -10,49 +10,50 @@
 angular.module('mtgEmblemsApp')
   .controller('MainCtrl', function ($scope, $http) {
       var rng = null;
-      $scope.show_emblems = [];
-      $scope.index = 0
+      $scope.showEmblems = [];
+      $scope.index = 0;
       $scope.rounds = 0;
+      $scope.gameId = makeId(5);
 
       $scope.reset = function () {
-        $scope.show_emblems = [];
+        $scope.showEmblems = [];
         shuffleArray($scope.emblems, false);
-        $scope.rounds = 0
-        $scope.index = 0
-      }
+        $scope.rounds = 0;
+        $scope.index = 0;
+      };
 
       $scope.next = function (permanent, automatic) {
-        var i, draw_others = 0;
-        var draw_others_as_permanent = false;
-        var to_add = null;
-        to_add = $scope.getRandomCard();
-        if (permanent) {
-          to_add.type = 'permanent';
+        var i, drawOthers = 0;
+        var drawOthersAsPermanent = false;
+        var toAdd = null;
+        toAdd = $scope.getRandomCard();
+        if (permanent || toAdd.isPermanent) {
+          toAdd.type = 'permanent';
         }
         if (automatic) {
-          to_add.is_automatic = true;
+          toAdd.isAutomatic = true;
         } else {
           $scope.rounds++;
         }
-        $scope.show_emblems.push(to_add);
-        if (to_add.draw_others > 0) {
-          draw_others = to_add.draw_others;
-          if (to_add.permanent) {
-            draw_others_as_permanent = to_add.permanent;
+        $scope.showEmblems.push(toAdd);
+        if (toAdd.drawOthers > 0) {
+          drawOthers = toAdd.drawOthers;
+          if (toAdd.drawOthersAsPermanent) {
+            drawOthersAsPermanent = toAdd.drawOthersAsPermanent;
           }
-          for (i = 0; i < draw_others; i++) {
-            $scope.next(draw_others_as_permanent, true);
+          for (i = 0; i < drawOthers; i++) {
+            $scope.next(drawOthersAsPermanent, true);
           }
         }
       };
 
       $scope.getRandomCard = function () {
-        var rand_index = Math.floor(rng() * $scope.emblems.length);
-        var emblem = JSON.parse(JSON.stringify($scope.emblems[rand_index]));
+        var randIndex = Math.floor(rng() * $scope.emblems.length);
+        var emblem = JSON.parse(JSON.stringify($scope.emblems[randIndex]));
         emblem.id = $scope.index++;
         emblem.type = 'standard';
         return emblem;
-      }
+      };
 
     $http.get('./data/emblems.json')
       .success(function(data, status, headers, config){

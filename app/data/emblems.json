@@ -112,7 +112,7 @@
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone.",
-    "draw_others": 2
+    "drawOthers": 2
 }, {
     "difficulty": 0,
     "text": "Whenever a permanent becomes tapped, its controller sacrifices it."
@@ -278,7 +278,7 @@
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose five game emblems at random. Then they enter the command zone.",
-    "draw_others": 5
+    "drawOthers": 5
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, two twenty-sided dice are rolled. Each player's life total becomes the total of the results of the dice rolls."
@@ -330,8 +330,8 @@
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose two game emblems at random. Then they enter the command zone as non-game emblems.",
-    "draw_others": 2,
-    "permanent": true
+    "drawOthers": 2,
+    "drawOthersAsPermanent": true
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player puts the top ten cards of his or her library into his or her graveyard."

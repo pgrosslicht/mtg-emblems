@@ -385,6 +385,13 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    coveralls: {
+      options: {
+        coverageDir: 'test/coverage',
+        force: true
+      }
     }
   });
 
@@ -414,7 +421,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma',
+    'coveralls'
   ]);
 
   grunt.registerTask('build', [

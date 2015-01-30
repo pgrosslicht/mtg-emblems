@@ -30,7 +30,7 @@ angular
       })
       .when('/watch/:gameId', {
         templateUrl: 'views/watch.html',
-        controller: 'WatchCtrl'
+        controller: 'HostCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -62,14 +62,15 @@ var shuffleArray = function(array, seed) {
   }
 
   return array;
-}
+};
 
 var makeId = function(length) {
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var text = '';
+    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-    for( var i=0; i < length; i++ )
+    for( var i=0; i < length; i++) {
         text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
 
     return text;
-}
+};

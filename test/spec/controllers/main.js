@@ -31,13 +31,13 @@ describe('Controller: MainCtrl', function () {
     httpBackend.expectGET('./data/emblems.json');
     httpBackend.flush();
     scope.next(false, false);
-    expect(scope.show_emblems.length).toBe(1);
+    expect(scope.showEmblems.length).toBe(1);
   });
 
   it('should empty all emblems when the reset button is clicked', function () {
     httpBackend.expectGET('./data/emblems.json');
     httpBackend.flush();
     scope.reset();
-    expect(scope.show_emblems.length).toBe(0);
+    expect(scope.showEmblems.length).toBe(0);
   });
 });
