@@ -13,7 +13,7 @@ before_script:
   - gem install compass
   - npm install -g grunt-cli bower
   - bower install
-script: grunt build
+script: grunt
 after_success:
     # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
     - git submodule add -b gh-pages https://${GH_TOKEN}@${GH_REF} site > /dev/null 2>&1

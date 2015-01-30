@@ -1,0 +1,19 @@
+[{
+    "difficulty": 0,
+    "text": "Players have no maximum hand size."
+}, {
+    "difficulty": 0,
+    "text": "Whenever a source would deal damage, it deals double that damage instead."
+}, {
+    "difficulty": 0,
+    "text": "Whenever a source would deal damage, prevent that damage."
+}, {
+    "difficulty": 0,
+    "text": "Switch all creatures' power and toughness."
+}, {
+    "difficulty": 0,
+    "text": "All lands have: \"{T}: Add one mana of any color to your mana pool.\""
+}, {
+    "difficulty": 0,
+    "text": "All lands lose all abilities and have: \"{T}: Add {1} to your mana pool.\""
+}]

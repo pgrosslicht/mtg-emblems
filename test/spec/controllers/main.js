@@ -2,21 +2,42 @@
 
 describe('Controller: MainCtrl', function () {
 
-  // load the controller's module
-  beforeEach(module('mtgEmblemsApp'));
 
   var MainCtrl,
-    scope;
+    scope,
+    httpBackend;
+
+    // load the controller's module
+  beforeEach(module('mtgEmblemsApp'));
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
+    httpBackend = $httpBackend;
+    jasmine.getJSONFixtures().fixturesPath='base/test/fixtures';
+    httpBackend.whenGET('./data/emblems.json').respond(getJSONFixture('emblems.json'));
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('getRandomCard should return something', function () {
+    httpBackend.expectGET('./data/emblems.json');
+    httpBackend.flush();
+    expect(scope.getRandomCard()).toBeDefined();
+  });
+
+  it('should add an emblem when the next button is clicked', function () {
+    httpBackend.expectGET('./data/emblems.json');
+    httpBackend.flush();
+    scope.next(false, false);
+    expect(scope.show_emblems.length).toBe(1);
+  });
+
+  it('should empty all emblems when the reset button is clicked', function () {
+    httpBackend.expectGET('./data/emblems.json');
+    httpBackend.flush();
+    scope.reset();
+    expect(scope.show_emblems.length).toBe(0);
   });
 });
