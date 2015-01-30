@@ -1,4 +1,4 @@
-Magic Emblems
+Magic Emblems [![Build Status](https://travis-ci.org/pdgwien/mtg-emblems.svg?branch=master)](https://travis-ci.org/pdgwien/mtg-emblems)
 =============
 
 If you are searching for a way to spice up your old boring Magic: The Gathering game, then look no further. 
