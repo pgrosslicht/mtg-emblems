@@ -403,4 +403,10 @@
 }, {
     "difficulty": 2,
     "text": "Attacking creatures have indestructible."
+}, {
+    "difficulty": 2,
+    "text": "When this emblem enters the command zone, change the text of all nonland permanents by replacing all instances of {T} with {Q}, and vice versa. (This effect lasts indefinitely.)"
+}, {
+    "difficulty": 1,
+    "text": "All instances of  {T} in the text of nonland permanents are changed to {Q}, and vice versa."
 }]
