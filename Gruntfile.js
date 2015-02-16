@@ -282,9 +282,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: '<%= yeoman.app %>/svgs',
           src: '{,*/}*.svg',
-          dest: '<%= yeoman.dist %>/images'
+          dest: '.tmp/svgs'
         }]
       }
     },
@@ -324,6 +324,22 @@ module.exports = function (grunt) {
     cdnify: {
       dist: {
         html: ['<%= yeoman.dist %>/*.html']
+      }
+    },
+
+    grunticon: {
+      dist: {
+        files: [{
+            expand: true,
+            cwd: '.tmp/svgs',
+            src: ['mana/*.svg'],
+            dest: '<%= yeoman.dist %>/sprites/mana'
+        }],
+        options: {
+          defaultWidth: "100px",
+          defaultHeight: "100px",
+          cssprefix: ".mana-"
+        }
       }
     },
 
@@ -431,6 +447,7 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
+    'grunticon',
     'concat',
     'ngAnnotate',
     'copy:dist',
