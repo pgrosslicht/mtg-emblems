@@ -336,9 +336,9 @@ module.exports = function (grunt) {
             dest: '<%= yeoman.dist %>/sprites/mana'
         }],
         options: {
-          defaultWidth: "100px",
-          defaultHeight: "100px",
-          cssprefix: ".mana-"
+          defaultWidth: '100px',
+          defaultHeight: '100px',
+          cssprefix: '.mana-'
         }
       }
     },
