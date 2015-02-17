@@ -14,6 +14,6 @@ angular.module('mtgEmblemsApp')
       var output = input.replace(/\*(.*?)\*/gi, function(_, match) {
         return '<span style="font-style: italic">' + match + '</span>';
       });
-      return $sce.trustAsHtml(output);
+      return output;
     };
   });
