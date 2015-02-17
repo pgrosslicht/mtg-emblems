@@ -13,7 +13,7 @@ describe('Filter: italicize', function () {
 
   it('should return words between asteriks as italics"', function () {
     var text = '*angularjs*';
-    expect(italicize(text)).toBe('<span style="font-style: italic">angularjs</span>');
+    expect(italicize(text).$$unwrapTrustedValue()).toBe('<span style="font-style: italic">angularjs</span>');
   });
 
 });
