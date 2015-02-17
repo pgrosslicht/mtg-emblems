@@ -1,9 +1,14 @@
+sudo: false
 language: node_js
 node_js:
 - '0.12'
 branches:
   only:
   - master
+cache:
+  directories:
+    - node_modules
+    - bower_components
 env:
   global:
   - GH_REF: github.com/pdgwien/mtg-emblems.git
