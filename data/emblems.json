@@ -75,7 +75,7 @@
     "text": "Spells cost {1} less to cast."
 }, {
     "difficulty": 0,
-    "text": "At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able. (That player draws a card first.)"
+    "text": "At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able. *(That player draws a card first.)*"
 }, {
     "difficulty": 0,
     "text": "Whenever a player casts a spell, counter that spell unless it's controller pays {X}, where X is that spell's converted mana cost."
@@ -271,10 +271,10 @@
     "text": "Whenever a source would deal damage to a player, that player may pay {2}. If he or she does, that source deals no damage instead."
 }, {
     "difficulty": 0,
-    "text": "Players can only cast one spell and activate one ability each turn. (Mana abilities don't count.)"
+    "text": "Players can only cast one spell and activate one ability each turn. *(Mana abilities don't count.)*"
 }, {
     "difficulty": 0,
-    "text": "Whenever a permanent would be sacrificed, it phases out instead. (If the sacrificing was part of a cost, the cost is still paid.)"
+    "text": "Whenever a permanent would be sacrificed, it phases out instead. *(If the sacrificing was part of a cost, the cost is still paid.)*"
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose five game emblems at random. Then they enter the command zone.",
@@ -308,7 +308,7 @@
     "text": "When this emblem enters the command zone, each player rolls a twenty-sided die. If a player rolls a 1, he or she loses the game."
 }, {
     "difficulty": 0,
-    "text": "Whenever a non instant or sorcery card would be put into a graveyard from anywhere, its owner puts it onto the battlefield instead."
+    "text": "Whenever a permanent card would be put into a graveyard from anywhere, its owner puts it onto the battlefield instead."
 }, {
     "difficulty": 0,
     "text": "All permanents have protection from artifacts and enchantments."
@@ -323,7 +323,7 @@
     "text": "When this emblem enters the command zone, all players gain control of all permanents they own."
 }, {
     "difficulty": 0,
-    "text": "Players may play lands anytime they could cast an instant. (The one-land-per-turn rule still applies.)"
+    "text": "Players may play lands anytime they could cast an instant. *(The one-land-per-turn rule still applies.)*"
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, each player flips a coin. Each player that loses the flip skips his or her next turn."
@@ -360,7 +360,7 @@
     "text": "Players can't tap or untap permanents to cast spells or activate abilities that aren't mana abilities."
 }, {
     "difficulty": 0,
-    "text": "Creatures' power and toughness can't be modified. (It can still be set and switched.)"
+    "text": "Creatures' power and toughness can't be modified. *(It can still be set and switched.)*"
 }, {
     "difficulty": 0,
     "text": "When this emblem enters the command zone, choose a color at random, then flip a coin. If the coin comes up heads, all creatures of the chosen color get +2/+2. If the coin comes up tails, all permanents and all players have protection from the chosen color."
@@ -390,13 +390,13 @@
     "text": "Each player may bid life. A random player starts the bidding with a bid of any number. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid and takes an extra turn now."
 }, {
     "difficulty": 1,
-    "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for an emblem. Remove each emblem with the most votes or tied for most votes from the command zone."
+    "text": "*Will of the council* — When this emblem enters the command zone, starting with a random player, each player votes for an emblem. Remove each emblem with the most votes or tied for most votes from the command zone."
 }, {
     "difficulty": 2,
     "text": "When this emblem enters the command zone, each player manifests the top ten cards of his or her library."
 }, {
     "difficulty": 2,
-    "text": "Will of the council — When this emblem enters the command zone, starting with a random player, each player votes for a permanent or suspended card. Move all counters from all permanents and suspended cards to the card with the most votes. If two or more cards are tied for most votes, choose one of them at random."
+    "text": "*Will of the council* — When this emblem enters the command zone, starting with a random player, each player votes for a permanent or suspended card. Move all counters from all permanents and suspended cards to the card with the most votes. If two or more cards are tied for most votes, choose one of them at random."
 }, {
     "difficulty": 3,
     "text": "Whenever a player would draw a card, that player may instead search his or her library for a card, put that card into his or her hand, then shuffle his or her library."
@@ -405,7 +405,7 @@
     "text": "Attacking creatures have indestructible."
 }, {
     "difficulty": 2,
-    "text": "When this emblem enters the command zone, change the text of all nonland permanents by replacing all instances of {T} with {Q}, and vice versa. (This effect lasts indefinitely.)"
+    "text": "When this emblem enters the command zone, change the text of all nonland permanents by replacing all instances of {T} with {Q}, and vice versa. *(This effect lasts indefinitely.)*"
 }, {
     "difficulty": 1,
     "text": "All instances of  {T} in the text of nonland permanents are changed to {Q}, and vice versa."
