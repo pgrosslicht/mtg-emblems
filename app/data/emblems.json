@@ -130,7 +130,7 @@
     "text": "At the beginning of each player's draw step, that player draws four additional cards."
 }, {
     "difficulty": 0,
-    "text": "All instant or sorcery cards in all graveyards gain flashback. The flashback cost is equal to its mana cost."
+    "text": "All instant or sorcery cards in all graveyards gain flashback. Each card's flashback cost is equal to its mana cost."
 }, {
     "difficulty": 0,
     "text": "Whenever a player casts an instant or sorcery spell, each other player copies that spell. Each of those players may choose new targets for his or her copy."
