@@ -154,7 +154,7 @@
     "text": "All permanents aren't artifacts."
 }, {
     "difficulty": 0,
-    "text": "At the beginning of each player's upkeep, that player turns all face-down permanents he or she controls face up and all creatures he or she controls face down. They are 2/2 creatures."
+    "text": "At the beginning of each player's upkeep, that player turns all face-down permanents he or she controls face up and all creatures he or she controls face down. *(They're 2/2 creatures.)*"
 }, {
     "difficulty": 0,
     "text": "All lands have \"Sacrifice this permanent: Add one mana of any color this land could produce to your mana pool.\""
