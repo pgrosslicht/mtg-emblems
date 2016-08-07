@@ -12,10 +12,10 @@
     "text": "Switch all creatures' power and toughness."
 }, {
     "difficulty": 0,
-    "text": "All lands have: \"{T}: Add one mana of any color to your mana pool.\""
+    "text": "All lands have \"{T}: Add one mana of any color to your mana pool.\""
 }, {
     "difficulty": 0,
-    "text": "All lands lose all abilities and have: \"{T}: Add {1} to your mana pool.\""
+    "text": "All lands lose all abilities and have \"{T}: Add {C} to your mana pool.\""
 }, {
     "difficulty": 0,
     "text": "Permanents don't untap during their controller's untap step."
@@ -36,10 +36,10 @@
     "text": "All creatures have double strike."
 }, {
     "difficulty": 0,
-    "text": "All creatures are 0/5 with no abilities."
+    "text": "All creatures lose all abilities and have base power and toughness 0/5."
 }, {
     "difficulty": 0,
-    "text": "Players may play any number of additional lands."
+    "text": "Players may play any number of lands."
 }, {
     "difficulty": 0,
     "text": "All creatures get -X/-0, where X is their controller's life total."
@@ -57,7 +57,7 @@
     "text": "Players can't lose the game."
 }, {
     "difficulty": 0,
-    "text": "All permanents have: \"{T}: Add one mana of any combination of colors to your mana pool for each permanent you control. Damage that sources you control deal this turn is prevented. Skip your next turn.\""
+    "text": "All permanents have \"{T}: Add one mana of any combination of colors to your mana pool for each permanent you control. Damage that sources you control deal this turn is prevented. Skip your next turn.\""
 }, {
     "difficulty": 0,
     "text": "All nonland permanents that aren't creatures are creatures with power and toughness equal to their converted mana cost in addition to their other types."
@@ -81,7 +81,7 @@
     "text": "Whenever a player casts a spell, counter that spell unless it's controller pays {X}, where X is that spell's converted mana cost."
 }, {
     "difficulty": 0,
-    "text": "Whenever a player casts a spell for the first time in a turn, counter that spell. This ability can counter spells that can't be countered as though they couldn't not be countered."
+    "text": "Whenever a player casts his or her first spell each turn, counter that spell. This ability can counter spells that can't be countered as though they couldn't not be countered."
 }, {
     "difficulty": 0,
     "text": "At the beginning of each player's upkeep, that player flips a coin for each permanent he or she controls. If he or she loses the flip, he or she sarcifices that permanent."
@@ -157,7 +157,7 @@
     "text": "At the beginning of each player's upkeep, that player turns all face-down permanents he or she controls face up and all creatures he or she controls face down. They are 2/2 creatures."
 }, {
     "difficulty": 0,
-    "text": "All lands have: \"Sacrifice this permanent: Add one mana of any color this land could produce to your mana pool.\""
+    "text": "All lands have \"Sacrifice this permanent: Add one mana of any color this land could produce to your mana pool.\""
 }, {
     "difficulty": 0,
     "text": "Whenever a player casts a spell, that player may untap target permanent he or she controls or tap target permanent an opponent controls."
