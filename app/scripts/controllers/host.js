@@ -9,8 +9,7 @@
  */
 angular.module('mtgEmblemsApp')
   .controller('HostCtrl', function ($scope, $route, $routeParams, $http, $firebaseObject) {
-      var ref = new Firebase('https://mtg-emblems.firebaseio.com/' + $routeParams.gameId);
-      var root = $firebaseObject(ref);
+      var root = firebase.database().ref();
       var metadata = $firebaseObject(ref.child('metadata'));
       metadata.$bindTo($scope, 'metadata');
       var rng = null;
