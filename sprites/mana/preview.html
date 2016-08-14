@@ -11,275 +11,112 @@
 			}
 		</style>
 		<script>
-			/*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+			/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 
-(function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),a=n||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",a.parentNode.insertBefore(o,a),o.onloadcssdefined=function(e){for(var n,t=0;t<i.length;t++)i[t].href&&i[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(a,i){"use strict";if(a&&3===a.length){var r=t.navigator,d=t.document,s=t.Image,c=!(!d.createElementNS||!d.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!d.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===r.userAgent.indexOf("Chrome")||-1!==r.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=a[2],e(a[2])},l.onload=function(){var t=1===l.width&&1===l.height,r=a[t&&c?0:t?1:2];t&&c?o.method="svg":t?o.method="datapng":o.method="png",o.href=r,n(e(r),i)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",d.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this)}();
 			
-			
-			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
+			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"], grunticon.svgLoadedCallback);
 		</script>
 		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
-
 	</head>
 	<body>
 
-		<h1>PREVIEW - you can change this in the previewTemplate option</h1>
-		
-			
+		<h1>CUSTOM PREVIEW - you can change this in the previewTemplate option</h1>
 			<pre><code>.mana-0:</code></pre><div class="mana-0" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-1:</code></pre><div class="mana-1" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-10:</code></pre><div class="mana-10" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-100:</code></pre><div class="mana-100" style="width: 188px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-1000000:</code></pre><div class="mana-1000000" style="width: 508px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-11:</code></pre><div class="mana-11" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-12:</code></pre><div class="mana-12" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-13:</code></pre><div class="mana-13" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-14:</code></pre><div class="mana-14" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-15:</code></pre><div class="mana-15" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-16:</code></pre><div class="mana-16" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-17:</code></pre><div class="mana-17" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-18:</code></pre><div class="mana-18" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-19:</code></pre><div class="mana-19" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2:</code></pre><div class="mana-2" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-20:</code></pre><div class="mana-20" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2B:</code></pre><div class="mana-2B" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2G:</code></pre><div class="mana-2G" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2R:</code></pre><div class="mana-2R" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2U:</code></pre><div class="mana-2U" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-2W:</code></pre><div class="mana-2W" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-3:</code></pre><div class="mana-3" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-4:</code></pre><div class="mana-4" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-5:</code></pre><div class="mana-5" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-6:</code></pre><div class="mana-6" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-7:</code></pre><div class="mana-7" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-8:</code></pre><div class="mana-8" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-9:</code></pre><div class="mana-9" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-B:</code></pre><div class="mana-B" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-BG:</code></pre><div class="mana-BG" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-BP:</code></pre><div class="mana-BP" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-BR:</code></pre><div class="mana-BR" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
-			<pre><code>.mana-C:</code></pre><div class="mana-C" style="width: 120px; height: 100px;" ></div><hr/>
-			
-		
-			
+			<pre><code>.mana-C:</code></pre><div class="mana-C" style="width: 300px; height: 300px;" ></div><hr/>
+			<pre><code>.mana-CHAOS:</code></pre><div class="mana-CHAOS" style="width: 120px; height: 100px;" ></div><hr/>
 			<pre><code>.mana-G:</code></pre><div class="mana-G" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-GP:</code></pre><div class="mana-GP" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-GU:</code></pre><div class="mana-GU" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-GW:</code></pre><div class="mana-GW" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-H:</code></pre><div class="mana-H" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-HR:</code></pre><div class="mana-HR" style="width: 50px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-HW:</code></pre><div class="mana-HW" style="width: 50px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-INF:</code></pre><div class="mana-INF" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-P:</code></pre><div class="mana-P" style="width: 55.306px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Q:</code></pre><div class="mana-Q" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-R:</code></pre><div class="mana-R" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-RG:</code></pre><div class="mana-RG" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-RP:</code></pre><div class="mana-RP" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-RW:</code></pre><div class="mana-RW" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-S:</code></pre><div class="mana-S" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Slash:</code></pre><div class="mana-Slash" style="width: 38px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-T:</code></pre><div class="mana-T" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Tv2:</code></pre><div class="mana-Tv2" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Tv3:</code></pre><div class="mana-Tv3" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-U:</code></pre><div class="mana-U" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-UB:</code></pre><div class="mana-UB" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-UP:</code></pre><div class="mana-UP" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-UR:</code></pre><div class="mana-UR" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-W:</code></pre><div class="mana-W" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-WB:</code></pre><div class="mana-WB" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-WOld:</code></pre><div class="mana-WOld" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-WP:</code></pre><div class="mana-WP" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-WU:</code></pre><div class="mana-WU" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-X:</code></pre><div class="mana-X" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Y:</code></pre><div class="mana-Y" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
-			
 			<pre><code>.mana-Z:</code></pre><div class="mana-Z" style="width: 100px; height: 100px;" ></div><hr/>
-			
-		
+
+		<h2 id="embedded-svg-option">Embedded SVG option</h2>
+		<p>(The <code>data-grunticon-embed</code> attribute tells grunticon to inject SVG inline):</p>
+
+		<pre><code>icon-burger:</code></pre><div class="icon-burger" data-grunticon-embed style="width: px; height: px;" ></div><hr/>
+
+		<style>
+			.icon-burger {
+				width: 32px;
+				height: 30px;
+				display: inline-block;
+			}
+			  .icon-burger.alt .cheese {
+		                fill: red;
+		            }
+				 .icon-burger.alt .buns {
+		                fill: orange;
+		            }
+				  .icon-burger.alt .burger {
+		                fill: yellow;
+		            }
+		 		 .icon-burger.alt .lettuce {
+		                fill: green;
+		            }
+
+		</style>
+
+		<pre><code>icon-burger (styled variation):</code></pre><div class="icon-burger alt" data-grunticon-embed></div><hr/>
+
+
+
 </body>
 </html>
