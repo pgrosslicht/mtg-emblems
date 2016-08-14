@@ -16,7 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'firebaseObject'
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
