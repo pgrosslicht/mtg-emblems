@@ -8,10 +8,10 @@
  * Controller of the mtgEmblemsApp
  */
 angular.module('mtgEmblemsApp')
-  .controller('HostCtrl', function ($scope, $route, $routeParams, $http, $firebase) {
+  .controller('HostCtrl', function ($scope, $route, $routeParams, $http, $firebaseObject) {
       var ref = new Firebase('https://mtg-emblems.firebaseio.com/' + $routeParams.gameId);
-      var root = $firebase(ref);
-      var metadata = $firebase(ref.child('metadata')).$asObject();
+      var root = $firebaseObject(ref);
+      var metadata = $firebaseObject(ref.child('metadata'));
       metadata.$bindTo($scope, 'metadata');
       var rng = null;
       $scope.showEmblems = [];
