@@ -56,7 +56,6 @@ module.exports = function(config) {
       'PhantomJS'
     ],
 
-    reporters: ['coverage'],
 
     // Which plugins to enable
     plugins: [
@@ -67,11 +66,6 @@ module.exports = function(config) {
 
     preprocessors: {
       "app/scripts/**/*js": "coverage"
-    },
-
-    coverageReporter: {
-      type: "lcov",
-      dir: "test/coverage/"
     },
 
     // Continuous Integration mode

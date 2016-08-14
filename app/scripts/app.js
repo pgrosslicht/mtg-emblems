@@ -74,3 +74,11 @@ var makeId = function(length) {
 
     return text;
 };
+
+var config = {
+  apiKey: 'AIzaSyD-kt87rBr9tfRXqy24b0huBV52l6yp9mU',
+  authDomain: 'mtg-emblems.firebaseapp.com',
+  databaseURL: 'https://mtg-emblems.firebaseio.com',
+  storageBucket: 'mtg-emblems.appspot.com',
+};
+firebase.initializeApp(config);
