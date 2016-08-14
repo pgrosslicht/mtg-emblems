@@ -10,7 +10,7 @@
 angular.module('mtgEmblemsApp')
   .controller('HostCtrl', function ($scope, $route, $routeParams, $http, $firebaseObject) {
       var root = firebase.database().ref();
-      var metadata = $firebaseObject(ref.child('metadata'));
+      var metadata = $firebaseObject(root.child('metadata'));
       metadata.$bindTo($scope, 'metadata');
       var rng = null;
       $scope.showEmblems = [];
