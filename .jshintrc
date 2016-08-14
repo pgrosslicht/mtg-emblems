@@ -31,7 +31,8 @@
     "it": false,
     "jasmine": false,
     "spyOn": false,
-    "Firebase": false,
+    "firebase": false,
+    "ref": false,
     "shuffleArray": true,
     "makeId": true
   }
