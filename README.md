@@ -1,4 +1,4 @@
-Magic Emblems [![Build Status](https://travis-ci.org/pdgwien/mtg-emblems.svg?branch=master)](https://travis-ci.org/pdgwien/mtg-emblems) [![Code Climate](https://codeclimate.com/github/pdgwien/mtg-emblems/badges/gpa.svg)](https://codeclimate.com/github/pdgwien/mtg-emblems) [![Coverage Status](https://coveralls.io/repos/pdgwien/mtg-emblems/badge.svg)](https://coveralls.io/r/pdgwien/mtg-emblems)
+Magic Emblems [![Build Status](https://travis-ci.org/pdgwien/mtg-emblems.svg?branch=master)](https://travis-ci.org/pdgwien/mtg-emblems) [![Code Climate](https://codeclimate.com/github/pdgwien/mtg-emblems/badges/gpa.svg)](https://codeclimate.com/github/pdgwien/mtg-emblems)
 =============
 
 If you are searching for a way to spice up your old boring Magic: The Gathering game, then look no further. 
