@@ -32,7 +32,8 @@
     "jasmine": false,
     "spyOn": false,
     "Firebase": false,
-    "getJSONFixture": false
+    "getJSONFixture": false,
+    "Chance": false
   }
 }
 
