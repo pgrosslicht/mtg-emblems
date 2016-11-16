@@ -24,7 +24,6 @@ angular.module('mtgEmblemsApp')
                         $scope.metadata.rounds = 0;
                         $scope.metadata.seed = new Chance().natural();
                     }
-                    shuffleArray($scope.emblems, $scope.metadata.seed);
                     rng = new Chance($scope.metadata.seed);
                     var rounds = $scope.metadata.rounds;
                     for (var i = 0; i < rounds; i++) {
@@ -47,7 +46,6 @@ angular.module('mtgEmblemsApp')
             $scope.metadata.rounds = 0;
             $scope.metadata.seed = new Chance().natural();
             $scope.showEmblems = [];
-            shuffleArray($scope.emblems, $scope.metadata.seed);
             rng = new Chance($scope.metadata.seed);
         };
 
