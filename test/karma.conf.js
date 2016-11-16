@@ -28,7 +28,7 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/firebase/firebase.js',
       'bower_components/angularfire/dist/angularfire.js',
-      'bower_components/seedrandom/seedrandom.min.js',
+      'bower_components/chance/dist/chance.min.js',
       'bower_components/jquery/dist/jquery.min.js',
       'node_modules/mockfirebase/browser/mockfirebase.js',
       'node_modules/jasmine-jquery/lib/jasmine-jquery.js',

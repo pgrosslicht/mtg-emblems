@@ -9,9 +9,11 @@
  * Filter in the mtgEmblemsApp.
  */
 angular.module('mtgEmblemsApp')
-  .filter('reverse', function () {
-    return function(items) {
-      if(!angular.isArray(items)) { return items; }
-      return items.slice().reverse();
-    };
-  });
+    .filter('reverse', function () {
+        return function (items) {
+            if (!angular.isArray(items)) {
+                return items;
+            }
+            return items.slice().reverse();
+        };
+    });
