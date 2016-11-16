@@ -34,7 +34,8 @@
     "firebase": false,
     "ref": false,
     "shuffleArray": true,
-    "makeId": true
+    "makeId": true,
+    "Chance": true
   }
 }
 
