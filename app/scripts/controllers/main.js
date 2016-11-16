@@ -48,7 +48,7 @@ angular.module('mtgEmblemsApp')
         };
 
         $scope.getRandomCard = function () {
-            var randIndex = Math.floor(rng() * $scope.emblems.length);
+            var randIndex = rng.natural({max: $scope.emblems.length});
             var emblem = JSON.parse(JSON.stringify($scope.emblems[randIndex]));
             emblem.type = 'standard';
             return emblem;
